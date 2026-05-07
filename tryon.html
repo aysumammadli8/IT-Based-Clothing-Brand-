@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Virtual Try-On</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2>Virtual Try-On</h2>
+    <a href="index.html">Back</a>
+</nav>
+
+<div class="hero">
+    <h1>VIRTUAL TRY-ON</h1>
+    <p>Future camera simulation system</p>
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <h2>📸 Camera Simulation</h2>
+        <p>Virtual camera based clothing preview</p>
+
+        <button class="btn"
+        onclick="showLook()">
+        Start Try-On
+        </button>
+
+        <h3 id="look"></h3>
+    </div>
+
+    <div class="card">
+        <h2>✨ Features</h2>
+
+        <p>✔ Real-Time Preview</p>
+        <p>✔ AI Body Match</p>
+        <p>✔ Smart Clothing Fit</p>
+        <p>✔ 3D Visualization</p>
+    </div>
+
+</div>
+
+<script>
+
+function showLook(){
+document.getElementById("look").innerHTML=
+"👕 Hoodie successfully matched to your body";
+}
+
+</script>
+
+</body>
+</html>
