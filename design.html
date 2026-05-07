@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Custom Design</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+<h2>Custom Design</h2>
+<a href="index.html">Back</a>
+</nav>
+
+<div class="hero">
+<h1>CREATE YOUR STYLE</h1>
+<p>Design your own futuristic clothes</p>
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>🎨 Color Picker</h2>
+
+<button class="btn"
+onclick="changeColor('red')">
+Red
+</button>
+
+<button class="btn"
+onclick="changeColor('blue')">
+Blue
+</button>
+
+<button class="btn"
+onclick="changeColor('black')">
+Black
+</button>
+
+<br><br>
+
+<div id="shirt"
+style="
+width:150px;
+height:150px;
+background:white;
+margin:auto;
+border-radius:20px;
+">
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>🖋 Add Text</h2>
+
+<input id="textInput"
+placeholder="Write your text">
+
+<br><br>
+
+<button class="btn"
+onclick="showText()">
+Apply
+</button>
+
+<h3 id="output"></h3>
+
+</div>
+
+</div>
+
+<script>
+
+function changeColor(color){
+document.getElementById("shirt").style.background=color;
+}
+
+function showText(){
+let text=
+document.getElementById("textInput").value;
+
+document.getElementById("output").innerHTML=
+"✔ Design Added: " + text;
+}
+
+</script>
+
+</body>
+</html>
