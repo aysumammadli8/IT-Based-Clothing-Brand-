@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2>AI Assistant</h2>
+    <a href="index.html">Back</a>
+</nav>
+
+<div class="hero">
+    <h1>AI STYLE SYSTEM</h1>
+    <p>Stilini yaz və AI outfit yaratsın</p>
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<input id="styleInput"
+placeholder="sport / casual / dark">
+
+<br><br>
+
+<button class="btn"
+onclick="generate()">
+Generate Outfit
+</button>
+
+<h3 id="result"></h3>
+
+</div>
+
+<div class="card">
+<h2>AI Features</h2>
+
+<p>✔ Outfit Analysis</p>
+<p>✔ Smart Recommendation</p>
+<p>✔ Trend Detection</p>
+<p>✔ Fashion Prediction</p>
+
+</div>
+
+</div>
+
+<script>
+
+function generate(){
+
+let value =
+document.getElementById("styleInput").value;
+
+if(value=="sport"){
+document.getElementById("result").innerHTML=
+"🏀 Hoodie + Sneakers + Jogger";
+}
+
+else if(value=="dark"){
+document.getElementById("result").innerHTML=
+"🖤 Black Jacket + Cargo Pants";
+}
+
+else{
+document.getElementById("result").innerHTML=
+"👕 Casual Shirt + Jeans";
+}
+
+}
+
+</script>
+
+</body>
+</html>
