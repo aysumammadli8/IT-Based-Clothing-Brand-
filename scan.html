@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Body Scan</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+<h2>Body Scan</h2>
+<a href="index.html">Back</a>
+</nav>
+
+<div class="hero">
+<h1>AI BODY SCAN</h1>
+<p>Smart body measurement technology</p>
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>📏 Enter Height</h2>
+
+<input id="height"
+placeholder="Example: 175">
+
+<br><br>
+
+<button class="btn"
+onclick="scanBody()">
+Analyze
+</button>
+
+<h3 id="size"></h3>
+
+</div>
+
+<div class="card">
+
+<h2>🧠 Scan Features</h2>
+
+<p>✔ AI Measurement</p>
+<p>✔ Smart Size Detection</p>
+<p>✔ Fit Optimization</p>
+<p>✔ Camera Integration</p>
+
+</div>
+
+</div>
+
+<script>
+
+function scanBody(){
+
+let h=
+document.getElementById("height").value;
+
+if(h >= 180){
+document.getElementById("size").innerHTML=
+"Recommended Size: XL";
+}
+
+else if(h >= 170){
+document.getElementById("size").innerHTML=
+"Recommended Size: L";
+}
+
+else{
+document.getElementById("size").innerHTML=
+"Recommended Size: M";
+}
+
+}
+
+</script>
+
+</body>
+</html>
